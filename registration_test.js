@@ -16,6 +16,9 @@ Feature('Registration Test');
 Scenario('Given I am on the registration page and I do not fill the username I should see the error message', ({ I }) => {
     I.amOnPage('https://uneven-roomy-book.glitch.me/');
     // //input[@class='age-input']
+    
+    waitForElement()
+
     I.fillField('//input[@class="age-input"]', '25');
     ////input[@id="dob"]
     I.fillField('//input[@id="dob"]', '01-01-1995');
